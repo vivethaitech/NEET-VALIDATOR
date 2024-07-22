@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Neet Validator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Particulars</th>
+            <th>Allotted</th>
+        </tr>
+        <tr>
+            <td>Correct Answer</td>
+            <td>+4</td>
+        </tr>
+        <tr>
+            <td>Wrong Answer</td>
+            <td>-1</td>
+        </tr>
+        <tr>
+            <td>No Answer</td>
+            <td>0</td>
+        </tr>
+    </table>
+
+    <div class="form-container">
+        <form id="neetForm">
+            <h2>Neet Marks Calculation</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="regno">Registration Number:</label>
+                <input type="number" id="regno" name="regno" required>
+            </div>
+            <div class="form-group">
+                <label for="total">Total Questions:</label>
+                <input type="number" id="total" name="total" required>
+            </div>
+            <div class="form-group">
+                <label for="correct">Correct Answers:</label>
+                <input type="number" id="correct" name="correct" required>
+            </div>
+            <div class="form-group">
+                <label for="wrong">Wrong Answers:</label>
+                <input type="number" id="wrong" name="wrong" required>
+            </div>
+            <div class="form-group">
+                <label for="no">No Answers:</label>
+                <input type="number" id="no" name="no" required>
+            </div>
+            <button type="button" id="btn" onclick="calculateMarks()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
