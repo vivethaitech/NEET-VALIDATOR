@@ -41,7 +41,7 @@ function calculateMarks() {
         document.getElementById('result').innerText = '';
     } else {
         const totalMarks = (correctAnswers * 4) - (wrongAnswers * 1)-(noAnswers*0);
-        document.getElementById('result').innerText = 'Total NEET marks: ' + totalMarks + ' marks';
+        document.getElementById('result').innerText = 'Total NEET marks: ' + totalMarks;
         document.getElementById('error').innerText = '';
     }
 }
